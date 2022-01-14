@@ -45,9 +45,9 @@ This is a Whatsapp Chatbot that responds with quotes, reply owners name, search 
 
     a. Download [ngrok](https://ngrok.com/download). From your CLI (terminal or CMD), navigate to the ngrok directory and run this command:
 
-        $ ngrok http 5000
+        $ ngrok http -region=eu 5000
     
-    Copy the URL where you see `Forwarding`. It will look like this `https://066cbc59.ngrok.io`.
+    Copy the URL where you see `Forwarding`. It will look like this `https://510f-197-211-63-19.eu.ngrok.io`.
 
     ![ngrok jpg](https://develop.arinzejustinng.com.ng/github/ngrok.jpg)
     
