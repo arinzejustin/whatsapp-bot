@@ -57,7 +57,7 @@ This is a Whatsapp Chatbot that responds with quotes, reply owners name, search 
 
     See the screenshot below:
 
-    ![twilio jpg](https://develop.arinzejustinng.com.ng/github//twilio.jpg)
+    ![twilio jpg](https://develop.arinzejustinng.com.ng/github/twilio.jpg)
 
     **Bonus:** You can create a customized link for your Whatsapp chatbot. Use this template: `http://wa.me/<phone-number-from-twilio>?text=<code-to-join-sandbox>`.
 
