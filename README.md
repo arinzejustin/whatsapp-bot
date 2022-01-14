@@ -1,5 +1,5 @@
 # Whatsapp-bot
-This is a Whatsapp Chatbot that responds with quotes, reply owners name, search internet for any meaning of word.
+This is a Whatsapp Chatbot that responds with quotes, reply owners name, search internet for meaning of any word.
 
 
 # Usage
