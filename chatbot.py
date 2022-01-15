@@ -16,6 +16,12 @@ def chatbot():
     global good, byemsg, ai
     global last
     global username
+    counter1 = 0 
+    counter2 = 0 
+    counter3 = 0 
+    counter4 = 0 
+    counter5 = 0 
+    counter6 = 0 
 
     f = open("message.txt", "a+")
 
@@ -26,12 +32,6 @@ def chatbot():
 
     f.write(incoming_msg + "\n")
     f.close()
-    counter1 = 0
-    counter2 = 0
-    counter3 = 0
-    counter4 = 0
-    counter5 = 0
-    counter6 = 0
 
     choice = ["God!",
              "Mannn! I have already told you!",
@@ -41,7 +41,7 @@ def chatbot():
              "I think I have told you once before"]
 
     if "hello" in incoming_msg or "hi" in incoming_msg:
-        counter1 += 1
+        counter1 = 1
         coutryme = time.localtime()
         hr = coutryme.tm_hour
         if hr < 12:
@@ -51,9 +51,11 @@ def chatbot():
         if hr > 17:
             good = "evening"
         if counter1 <= 1:
+            counter1 += 1
             greeting = "Hello Good %s" % good
         else:
-            greeting = "We are already talking, ain't we ?"
+            if counter1 > 1:
+               greeting = "We are already talking, ain't we ?"
         msg.body(greeting)
         responded = True
 
