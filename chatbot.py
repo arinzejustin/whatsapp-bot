@@ -7,6 +7,7 @@ import random
 import wikipedia as wk
 import re
 from urllib.request import urlopen
+from datetime import datetime
 
 app = Flask(__name__)
 
@@ -194,6 +195,12 @@ def chatbot():
         else:
             quote = 'I could not retrieve a quote at this time, sorry.'
         msg.body(quote)
+        responded = True
+      
+    if 'time' in incoming_msg:
+        now = datetime.now()
+        current_time = now.strftime("%H:%M:%S")
+        msg.body(current_time)
         responded = True
 
     if not responded:
